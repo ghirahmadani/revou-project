@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>BMI Calculator</title>
+        <link rel="icon" href="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38cd504c60bad_RevoU%20favicon.svg" type="image/x-icon">
+    
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="navigation">
+                <div class="logo">
+                    <img src="https://assets.website-files.com/61af164800e38c4f53c60b4e/61af164800e38c11efc60b6d_RevoU.svg">
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a href="https://revou.co/">Home</a>
+                    </li>
+                    <li>
+                        <a href="#profile">Our Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="banner-section">
+            <h1>Kalkulator BMI (IMT)</h1>
+            <p>Gunakan kalkulator ini untuk memeriksa Indeks Massa Tubuh (IMT) dan mengecek apakah berat badan anda ideal atau tidak.</p>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <form class="form" id="form" onsubmit="return validateForm()">
+                    <div class="row">
+                        <h3>Apa jenis kelamin Anda?</h3>
+                        <input type="radio" id="pria" name="jenis-kelamin" value="Pria">
+                        <label for="Pria">Pria</label>
+                        
+                        <input type="radio" id="wanita" name="jenis-kelamin" value="Wanita">
+                        <label for="Wanita">Wanita</label>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h3>Berapa usia Anda? (tahun)</h3>
+                        <input type="text" id="usia" name="usia">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h3>Berapa tinggi Anda? (cm)</h3>
+                        <input type="text" id="tinggi-badan" name="tinggi-badan">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h3>Berapa berat badan Anda? (kg)</h3>
+                        <input type="text" id="berat-badan" name="berat-badan">
+                    </div>
+                    <br>
+                    <div class="row">
+                        <button type="button" id="submit">Calculate</button>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <h2 id="result"></h2>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
